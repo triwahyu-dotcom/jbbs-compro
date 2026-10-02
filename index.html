@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PT Juara Berhasil Berkah Sejahtera — Company Profile 2026</title>
+<!-- Adobe Fonts: Proxima Nova + Monotalic -->
+<link rel="stylesheet" href="https://use.typekit.net/uqi5guw.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#050819; --deep:#0B1238; --indigo:#1F31AB; --indigo-2:#3A4CD0; --lavender:#9296F2; --mist:#C9CBFA;
+  --lime:#A6D236; --white:#FFFFFF; --text-dim:rgba(255,255,255,.66); --line:rgba(255,255,255,.12);
+  --light:#FCFCFE; --light-ink:#050819; --light-dim:#4A4C63; --light-line:#E9E9F2; --light-accent:#1F31AB;
+  --sans:"proxima-nova","Proxima Nova","Figtree","Helvetica Neue",Arial,sans-serif; --mono:"monotalic","Monotalic","Space Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --light:#0D0F2A; --light-ink:#F1F1F8; --light-dim:#A9ABC6; --light-line:rgba(255,255,255,.08); --light-accent:#A3A7F7; }
+}
+:root[data-theme="dark"]{ --light:#0D0F2A; --light-ink:#F1F1F8; --light-dim:#A9ABC6; --light-line:rgba(255,255,255,.08); --light-accent:#A3A7F7; }
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth; scroll-padding-top:env(safe-area-inset-top,0px); background:var(--night)}
+body{margin:0; font-family:var(--sans); background:var(--night); color:var(--white); line-height:1.6; font-size:17px; -webkit-font-smoothing:antialiased}
+img{max-width:100%; display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--lime); outline-offset:3px}
+.wrap{width:min(1200px,100% - 48px); margin-inline:auto}
+section,header,footer{position:relative}
+p{margin:0 0 1em; max-width:64ch}
+.mono{font-family:var(--mono); font-size:13px; letter-spacing:.01em}
+
+/* Two-tone headline, as in the reference slides */
+.tt{font-weight:700; letter-spacing:-.02em; line-height:1.12; margin:0}
+.tt em{font-style:normal; background:linear-gradient(90deg,#3E52DA,#8C98F2); -webkit-background-clip:text; background-clip:text; color:transparent}
+.light .tt{color:var(--light-ink)}
+.light .tt em{background:none; color:var(--light-accent)}
+.h-xl{font-size:clamp(34px,4.4vw,58px)}
+.h-l{font-size:clamp(28px,3.4vw,44px)}
+.inline-logo{display:inline-block; height:.9em; width:auto; vertical-align:-.12em; margin:0 .08em}
+
+/* Dark surfaces */
+.dark{background:radial-gradient(1200px 600px at 80% 0%,rgba(31,49,171,.28),transparent 60%),var(--night)}
+.gridlines{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px); background-size:72px 72px}
+.light{background-color:var(--light); color:var(--light-ink); background-image:linear-gradient(var(--light-line) 1px,transparent 1px),linear-gradient(90deg,var(--light-line) 1px,transparent 1px); background-size:96px 96px}
+.glass{background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02)); border:1px solid rgba(160,165,255,.2); border-radius:18px; box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+
+/* HERO */
+.hero{min-height:100vh; min-height:100svh; display:flex; flex-direction:column; overflow:hidden; background:radial-gradient(900px 700px at 72% 45%,rgba(31,49,171,.55),transparent 65%),linear-gradient(180deg,#030510,#0B1238 70%,#050819)}
+.hero .gridlines{position:absolute; inset:0}
+.topbar{position:relative; z-index:3; display:flex; justify-content:flex-end; gap:22px; padding:26px 0 0}
+.topbar a{font-family:var(--mono); font-size:13px; color:var(--text-dim); text-decoration:none}
+.topbar a:hover{color:#fff}
+.hero-body{position:relative; flex:1; display:grid; grid-template-columns:1fr 1.15fr; align-items:center; z-index:2}
+.hero-logo{width:min(560px,100%); height:auto; margin-top:-40px}
+.hero-star{position:absolute; right:-4%; top:50%; transform:translateY(-50%); width:min(64vw,860px); z-index:1;
+  -webkit-mask-image:radial-gradient(closest-side,#000 70%,transparent); mask-image:radial-gradient(closest-side,#000 70%,transparent)}
+.hero-star img{width:100%; mix-blend-mode:screen}
+.hero-foot{position:relative; z-index:3; display:flex; justify-content:space-between; align-items:end; padding:0 0 36px; color:rgba(255,255,255,.72)}
+.hero-foot .year{text-align:right; line-height:1.3}
+.hero-intro{position:relative; z-index:3; max-width:40ch; color:var(--text-dim); font-size:17px; margin-top:28px}
+@media (prefers-reduced-motion:no-preference){
+  .hero-star img{animation:float 7s ease-in-out infinite alternate}
+  @keyframes float{from{transform:translateY(-8px) rotate(-1deg)}to{transform:translateY(10px) rotate(1deg)}}
+}
+
+/* ABOUT */
+.about{padding:120px 0 0; overflow:hidden}
+.about-path{margin-top:30px; width:100%; -webkit-mask-image:linear-gradient(180deg,transparent,#000 18%,#000 75%,transparent); mask-image:linear-gradient(180deg,transparent,#000 18%,#000 75%,transparent)}
+.about-row{display:grid; grid-template-columns:1fr 1fr; gap:48px; padding:10px 0 110px; align-items:start}
+.about-row p{color:var(--text-dim); font-size:15.5px}
+.about-row b{color:#fff; font-weight:600}
+.facts{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--line)}
+.facts div{padding:22px 20px 0 0}
+.facts strong{display:block; font-size:clamp(24px,2.3vw,32px); font-weight:700; letter-spacing:-.02em; line-height:1}
+.facts span{display:block; margin-top:8px; font-size:14.5px; color:var(--text-dim)}
+
+/* VALUES (light) */
+.values{padding:120px 0 90px; text-align:center}
+.values .tt{max-width:30ch; margin:0 auto}
+.values-img{width:min(760px,100%); margin:24px auto 10px; mix-blend-mode:multiply; -webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent); mask-image:radial-gradient(closest-side,#000 62%,transparent)}
+.values-cols{display:grid; grid-template-columns:repeat(3,1fr); gap:32px; text-align:left; color:var(--light-dim); font-size:15.5px}
+.values-cols p{margin:0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .values-img{mix-blend-mode:normal; border-radius:20px; filter:invert(1) hue-rotate(180deg) brightness(.9)}}
+:root[data-theme="dark"] .values-img{mix-blend-mode:normal; border-radius:20px; filter:invert(1) hue-rotate(180deg) brightness(.9)}
+
+.values-cols.flow{display:block; columns:3; column-gap:32px}
+.values-cols.flow p{max-width:none}
+@media (max-width:640px){.values-cols.flow{columns:1}}
+/* PROCESS (light) */
+.process{padding:40px 0 130px}
+.section-label{font-family:var(--mono); font-size:13px; color:var(--lavender); margin-bottom:18px; display:block}
+.light .section-label{color:var(--light-accent)}
+.steps{list-style:none; padding:0; margin:48px 0 0; display:grid; grid-template-columns:repeat(6,1fr); gap:14px; counter-reset:s}
+.steps li{counter-increment:s; background:var(--light); border:1px solid var(--light-line); border-radius:16px; padding:20px 18px 22px; position:relative}
+.steps li::before{content:counter(s,decimal-leading-zero); font-family:var(--mono); font-size:13px; color:var(--light-accent); display:block; margin-bottom:26px}
+.steps b{display:block; font-size:17px; margin-bottom:6px; line-height:1.25}
+.steps span{font-size:14.5px; color:var(--light-dim); line-height:1.5}
+
+/* SERVICES */
+.services{padding:130px 0 130px}
+.svc-head{display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:end; margin-bottom:56px}
+.svc-head p{color:var(--text-dim); margin:0}
+.svc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.svc{padding:28px 26px 24px}
+.svc.span2{grid-column:span 2}
+.svc h3{font-size:21px; font-weight:700; margin:0 0 6px; letter-spacing:-.01em}
+.svc .mono{color:var(--lavender); display:block; margin-bottom:18px}
+.svc p{color:var(--text-dim); font-size:15px; margin-bottom:12px}
+.svc ul{list-style:none; margin:0; padding:0}
+.svc li{padding:9px 0 9px 22px; border-top:1px solid var(--line); font-size:15px; position:relative; color:rgba(255,255,255,.88)}
+.svc li::before{content:""; position:absolute; left:2px; top:16px; width:10px; height:10px; background:var(--lavender); clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+.svc.span2 ul{columns:2; column-gap:36px}
+.svc.span2 li{break-inside:avoid}
+
+/* PORTFOLIO */
+.portfolio{padding:120px 0 110px}
+.sub-head{display:flex; justify-content:space-between; align-items:end; gap:24px; margin:90px 0 28px; padding-bottom:16px; border-bottom:1px solid var(--line)}
+.sub-head h3{font-size:clamp(24px,2.6vw,32px); font-weight:700; margin:0; letter-spacing:-.015em}
+.sub-head p{margin:0; color:var(--text-dim); font-size:15px; max-width:44ch}
+.works{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.work{overflow:hidden; padding:0}
+.work img{aspect-ratio:16/9; width:100%; object-fit:cover}
+.work .body{padding:18px 20px 22px}
+.work h4{margin:0 0 4px; font-size:18px; font-weight:700; line-height:1.25}
+.work .meta{font-family:var(--mono); font-size:12px; color:var(--lavender); margin:0 0 10px}
+.work p{margin:0; font-size:14.5px; color:var(--text-dim); line-height:1.5}
+.also{display:grid; grid-template-columns:repeat(3,1fr); gap:0 36px; margin-top:36px}
+.also ul{list-style:none; margin:0; padding:0}
+.also li{padding:11px 0; border-bottom:1px solid var(--line); font-size:15px; color:var(--text-dim)}
+.also li b{color:#fff; font-weight:600}
+.cases{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.case{padding:26px 26px 22px; position:relative; overflow:hidden}
+.case::after{content:""; position:absolute; width:260px; height:260px; right:-110px; top:-120px; background:radial-gradient(closest-side,rgba(31,49,171,.45),transparent); pointer-events:none}
+.case .brand{font-family:var(--mono); font-size:12px; color:var(--lavender)}
+.case h4{margin:4px 0 20px; font-size:20px; font-weight:700; line-height:1.2}
+.case .num{font-size:clamp(34px,3.2vw,44px); font-weight:800; letter-spacing:-.03em; line-height:1; background:linear-gradient(90deg,#fff,#B7BAF8); -webkit-background-clip:text; background-clip:text; color:transparent}
+.case .lbl{font-size:14px; color:var(--text-dim); margin:6px 0 16px}
+.case .how{font-size:13.5px; color:var(--text-dim); border-top:1px solid var(--line); padding-top:12px; margin:4px 0 0}
+.case.wide{grid-column:1/-1}
+.case.wide .wide-in{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:32px; align-items:center}
+.case.wide .case-img{width:100%; margin:0; border-radius:12px; object-position:center}
+
+.acts{display:grid; grid-template-columns:repeat(5,1fr); gap:14px}
+.act{padding:22px 20px}
+.act strong{display:block; font-size:clamp(26px,2.4vw,34px); font-weight:800; letter-spacing:-.02em; line-height:1; color:var(--lime)}
+.act .mono{display:block; color:var(--text-dim); margin:6px 0 14px; font-size:12px}
+.act h4{margin:0 0 4px; font-size:16px; line-height:1.3}
+.act p{margin:0; font-size:14px; color:var(--text-dim)}
+
+/* CLIENTS (light) */
+.clients{padding:120px 0 120px}
+.wall{margin-top:40px; font-size:clamp(20px,2.3vw,30px); font-weight:700; letter-spacing:-.015em; line-height:1.6; color:var(--light-ink)}
+.wall span{white-space:nowrap}
+.wall svg{width:.5em; height:.5em; margin:0 .34em; fill:var(--light-accent); vertical-align:.04em}
+
+/* FILM */
+.film{padding:140px 0 140px; overflow:hidden; background:radial-gradient(900px 520px at 10% 10%,rgba(31,49,171,.35),transparent 65%),radial-gradient(700px 500px at 100% 70%,rgba(31,49,171,.25),transparent 65%),var(--night)}
+.film .kicker{display:inline-flex; align-items:center; gap:10px; font-family:var(--mono); font-size:13px; color:var(--lime); border:1px solid rgba(166,210,54,.4); padding:6px 14px; border-radius:999px; margin-bottom:28px}
+.film .lede{color:var(--text-dim); font-size:18px; margin-top:24px; max-width:60ch}
+.film-top{display:grid; grid-template-columns:1.3fr .7fr; gap:40px; align-items:center}
+.film-top img{width:100%; max-width:300px; justify-self:end; mix-blend-mode:screen; -webkit-mask-image:radial-gradient(closest-side,#000 65%,transparent); mask-image:radial-gradient(closest-side,#000 65%,transparent)}
+.phases{list-style:none; padding:0; margin:64px 0 0; display:grid; grid-template-columns:repeat(5,1fr); position:relative}
+.phases::before{content:""; position:absolute; top:6px; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--indigo),var(--lavender),var(--lime))}
+.phases li{padding:30px 20px 0 0; position:relative}
+.phases li::before{content:""; position:absolute; top:0; left:0; width:14px; height:14px; border-radius:50%; background:#fff; box-shadow:0 0 0 4px rgba(146,150,242,.3),0 0 18px rgba(146,150,242,.9)}
+.phases .mono{color:var(--lavender); display:block; margin-bottom:6px}
+.phases b{display:block; font-size:18px; margin-bottom:6px}
+.phases span{font-size:14.5px; color:var(--text-dim)}
+.modules{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:80px}
+.module{padding:28px 26px 22px}
+.module .mono{color:var(--lime)}
+.module h4{font-size:21px; font-weight:700; margin:8px 0 18px; line-height:1.2}
+.module ul{list-style:none; margin:0; padding:0}
+.module li{font-size:15px; padding:9px 0 9px 22px; border-top:1px solid var(--line); position:relative; color:rgba(255,255,255,.88); line-height:1.45}
+.module li::before{content:""; position:absolute; left:2px; top:15px; width:10px; height:10px; background:var(--lavender); clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+.why{display:grid; grid-template-columns:.8fr 1.2fr; gap:56px; margin-top:110px; align-items:start}
+.why ul{list-style:none; margin:0; padding:0}
+.why li{padding:18px 0; border-top:1px solid var(--line)}
+.why li b{display:block; font-size:18px; margin-bottom:4px}
+.why li span{color:var(--text-dim); font-size:15.5px}
+.note{margin-top:64px; padding:24px 28px; display:flex; gap:20px; align-items:center; font-size:17px; border-color:rgba(166,210,54,.35)}
+.note svg{flex:0 0 32px; fill:var(--lime)}
+
+/* CONTACT */
+.contact{padding:140px 0 60px; overflow:hidden; background:radial-gradient(900px 600px at 85% 40%,rgba(31,49,171,.45),transparent 65%),linear-gradient(180deg,var(--night),#0B1238)}
+.contact-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:48px; align-items:end; margin-top:64px}
+.office .mono{color:var(--lavender); display:block; margin-bottom:10px}
+.office p{color:var(--text-dim)}
+.links{list-style:none; margin:0; padding:0}
+.links li{padding:14px 0; border-top:1px solid var(--line); font-weight:600}
+.links a{text-decoration:none}
+.links a:hover{color:var(--lime)}
+.foot{display:flex; justify-content:space-between; align-items:end; gap:24px; margin-top:100px; padding-top:28px; border-top:1px solid var(--line); color:rgba(255,255,255,.6)}
+.foot img{height:60px; width:auto}
+
+@media (max-width:1000px){
+  .hero-body{grid-template-columns:1fr; padding-top:30px}
+  .hero-star{position:relative; right:auto; top:auto; transform:none; width:100%; margin-top:-10px}
+  .hero-logo{margin-top:20px}
+  .about-row,.svc-head,.why,.contact-grid,.film-top{grid-template-columns:1fr}
+  .film-top img{justify-self:start; max-width:220px}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .svc-grid,.works,.cases,.modules{grid-template-columns:repeat(2,1fr)}
+  .svc.span2{grid-column:span 2}
+  .acts{grid-template-columns:repeat(2,1fr)}
+  .phases{grid-template-columns:repeat(2,1fr); row-gap:30px}
+  .phases::before{display:none}
+  .also{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .topbar{display:none}
+  .facts,.values-cols,.steps,.svc-grid,.works,.cases,.modules,.acts,.phases,.also{grid-template-columns:1fr}
+  .svc.span2{grid-column:auto}
+  .svc.span2 ul{columns:1}
+  .sub-head,.foot,.hero-foot{flex-direction:column; align-items:start}
+  .hero-foot .year{text-align:left}
+}
+
+/* CONTACT CARD */
+.contact{padding:120px 0 50px; background:var(--night)}
+.cta-card{position:relative; overflow:hidden; border:1.5px solid rgba(255,255,255,.55); border-radius:clamp(28px,5vw,72px); padding:clamp(40px,6vw,80px) clamp(22px,5vw,64px) clamp(40px,5vw,64px); text-align:center;
+  background:radial-gradient(60% 70% at 0% 100%,rgba(31,49,171,.95),transparent 70%),linear-gradient(135deg,rgba(255,255,255,.2),rgba(255,255,255,.04) 35%,transparent 60%),linear-gradient(135deg,#2A2C44,#0B0E2A 55%,#050819)}
+.cta-spark{display:block; width:clamp(100px,11vw,150px); height:auto; margin:0 auto clamp(60px,10vw,150px); overflow:visible; filter:drop-shadow(0 0 3px rgba(190,200,255,.95)) drop-shadow(0 0 14px rgba(90,110,255,.8)) drop-shadow(0 0 34px rgba(60,80,230,.55))}
+.cta-title{margin:0 auto; font-size:clamp(38px,6.6vw,96px); font-weight:700; letter-spacing:-.02em; line-height:1.05; background:linear-gradient(90deg,#3242C8 0%,#8C90C8 35%,#D7D7DE 65%,#FFFFFF 100%); -webkit-background-clip:text; background-clip:text; color:transparent}
+.cta-pill{list-style:none; margin:clamp(24px,3vw,36px) auto 0; padding:14px clamp(18px,3vw,40px); display:inline-flex; flex-wrap:wrap; justify-content:center; gap:10px clamp(28px,5vw,64px); border:1.5px solid rgba(255,255,255,.55); border-radius:22px; background:linear-gradient(90deg,rgba(255,255,255,.18),rgba(255,255,255,.04))}
+.cta-pill a{display:inline-flex; align-items:center; gap:10px; font-family:var(--mono); font-size:clamp(14px,1.3vw,17px); color:rgba(255,255,255,.82); text-decoration:none}
+.cta-pill a:hover{color:#fff}
+.cta-pill svg{width:22px; height:22px; fill:none; stroke:var(--lime); stroke-width:1.6}
+.cta-pill svg .dot{fill:var(--lime); stroke:none}
+.cta-info{display:flex; flex-wrap:wrap; justify-content:center; gap:28px clamp(40px,6vw,90px); margin-top:clamp(70px,10vw,150px); text-align:left}
+.cta-row{display:flex; align-items:center; gap:22px}
+.cta-row strong{font-size:clamp(24px,2.4vw,34px); font-weight:700; color:rgba(255,255,255,.62); white-space:nowrap}
+.cta-row p{margin:0; font-size:clamp(15px,1.3vw,18px); color:rgba(255,255,255,.62); line-height:1.4}
+.cta-row a{text-decoration:none}
+.cta-foot{font-family:var(--mono); font-size:12px; color:rgba(255,255,255,.4); text-align:center; margin:22px auto 0}
+@media (max-width:640px){.cta-row{flex-direction:column; align-items:center; text-align:center; gap:6px}.cta-info{text-align:center}}
+</style>
+
+<style id="jbbs">
+.hero-kicker{position:relative; z-index:3; font-family:var(--mono); color:var(--lime); font-size:14px; margin:0 0 18px}
+.who-photos{display:block; width:100%; border-radius:18px; border:1px solid rgba(160,165,255,.2)}
+.expertise{padding:130px 0}
+.exp-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:56px}
+.exp{padding:32px 30px 26px}
+.exp h3{font-size:24px; font-weight:700; margin:0 0 4px}
+.exp .mono{color:var(--lavender); display:block; margin-bottom:18px}
+.exp ul{list-style:none; margin:0; padding:0}
+.exp li{padding:13px 0 13px 24px; border-top:1px solid var(--line); position:relative; font-size:16.5px}
+.exp li::before{content:""; position:absolute; left:2px; top:20px; width:11px; height:11px; background:var(--lime); clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+.feature{padding:110px 0}
+.feature-grid{display:grid; grid-template-columns:1.25fr .75fr; gap:48px; align-items:center}
+.feature.rev .feature-grid{grid-template-columns:.75fr 1.25fr}
+.feature.rev .feature-media{order:2}
+.feature-media{position:relative; border-radius:22px; overflow:hidden; border:1px solid rgba(160,165,255,.22)}
+.feature-media img{width:100%; aspect-ratio:16/10; object-fit:cover}
+.feature-media::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 55%,rgba(5,8,25,.55))}
+.feature ol{list-style:none; margin:28px 0 0; padding:0}
+.feature li{padding:14px 0; border-top:1px solid var(--line); font-size:17px; display:flex; gap:16px; align-items:baseline}
+.feature li .mono{color:var(--lavender); font-size:12px; min-width:26px}
+.clients-logos{margin:56px auto 0; width:min(1000px,100%)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .clients-logos{filter:invert(1)}}
+:root[data-theme="dark"] .clients-logos{filter:invert(1)}
+.trail{padding:130px 0 120px; overflow:hidden}
+.trail-grid{display:grid; grid-template-columns:.7fr 1.3fr; gap:40px; align-items:center}
+.trail-grid p{color:var(--text-dim); font-size:18px}
+.trail-map{width:100%; filter:drop-shadow(0 0 18px rgba(166,210,54,.25))}
+.legend{list-style:none; padding:0; margin:26px 0 0; display:flex; flex-wrap:wrap; gap:10px}
+.legend li{font-family:var(--mono); font-size:13px; padding:6px 12px; border:1px solid rgba(166,210,54,.45); border-radius:999px; color:var(--lime)}
+.projects{margin-top:70px}
+.project{display:grid; grid-template-columns:.62fr 1.38fr; gap:40px; padding:44px 0; border-top:1px solid var(--line)}
+.project-info{position:sticky; top:40px; align-self:start}
+.project-info .mono{color:var(--lavender); display:block; margin-bottom:10px}
+.project-info h3{font-size:clamp(22px,2.2vw,30px); font-weight:700; line-height:1.15; margin:0 0 10px; letter-spacing:-.01em}
+.project-info p{color:var(--text-dim); margin:0; font-size:15.5px}
+.gallery{display:grid; gap:10px}
+.gallery img{width:100%; height:100%; object-fit:cover; border-radius:14px; background:#0B1238}
+.gallery .main{aspect-ratio:16/9}
+.gallery .thumbs{display:grid; grid-template-columns:repeat(var(--n,3),1fr); gap:10px}
+.gallery .thumbs img{aspect-ratio:3/2}
+.gallery.single img{aspect-ratio:16/9}
+.gallery.pair{grid-template-columns:1fr 1fr}
+.gallery.pair img{aspect-ratio:4/3}
+@media (max-width:1000px){.exp-grid,.feature-grid,.feature.rev .feature-grid,.trail-grid,.project{grid-template-columns:1fr}.feature.rev .feature-media{order:0}.project-info{position:static}}
+@media (max-width:640px){.gallery .thumbs{grid-template-columns:repeat(2,1fr)}}
+.portfolio{overflow-x:clip}
+.case .case-img{display:block; width:calc(100% + 52px); margin:-26px -26px 20px; aspect-ratio:16/10; object-fit:cover; object-position:top}
+.featured{margin:56px 0 0; display:grid; gap:18px}
+.feat{position:relative; margin:0 calc(50% - 50vw); cursor:pointer; overflow:hidden}
+.feat .cover{width:100%; height:min(78vh,760px); object-fit:cover; display:block; transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.feat:hover .cover{transform:scale(1.03)}
+.feat::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(5,8,25,0) 45%,rgba(5,8,25,.88)); pointer-events:none}
+.feat-cap{position:absolute; z-index:2; left:max(24px,calc(50vw - 600px)); right:24px; bottom:40px}
+.feat-cap .mono{color:var(--lime); display:block; margin-bottom:8px}
+.feat-cap h3{font-size:clamp(28px,4.2vw,56px); font-weight:700; letter-spacing:-.02em; line-height:1.05; margin:0 0 8px; max-width:20ch}
+.feat-cap p{margin:0; color:rgba(255,255,255,.8); font-size:16px}
+.feat-cap .count{display:inline-block; margin-top:14px; color:#fff; border:1px solid rgba(255,255,255,.4); padding:6px 12px; border-radius:999px}
+.pgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.pcard{cursor:pointer; border-radius:18px; overflow:hidden; background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02)); border:1px solid rgba(160,165,255,.2); transition:transform .3s ease,border-color .3s ease}
+.pcard:hover{transform:translateY(-4px); border-color:rgba(160,165,255,.5)}
+.pimg{position:relative}
+.pimg img{width:100%; aspect-ratio:16/10; object-fit:cover; display:block}
+.pimg .count{position:absolute; right:10px; bottom:10px; background:rgba(5,8,25,.75); color:#fff; padding:4px 10px; border-radius:999px; font-size:12px}
+.pbody{padding:16px 18px 20px}
+.pbody .mono{color:var(--lavender); display:block; margin-bottom:6px; font-size:12px}
+.pbody h3{font-size:18px; font-weight:700; margin:0 0 6px; line-height:1.2}
+.pbody p{margin:0; color:var(--text-dim); font-size:14px}
+.lb{position:fixed; inset:0; z-index:100; background:rgba(3,5,16,.94); display:none; align-items:center; justify-content:center; padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+.lb.open{display:flex}
+.lb img{max-width:92vw; max-height:80vh; border-radius:12px; object-fit:contain}
+.lb .lb-cap{position:absolute; left:24px; right:24px; bottom:calc(20px + env(safe-area-inset-bottom,0px)); text-align:center; font-family:var(--mono); font-size:13px; color:rgba(255,255,255,.75)}
+.lb button{position:absolute; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.25); color:#fff; width:48px; height:48px; border-radius:50%; font-size:22px; cursor:pointer}
+.lb .x{top:calc(18px + env(safe-area-inset-top,0px)); right:18px}
+.lb .pv{left:18px; top:50%; transform:translateY(-50%)}
+.lb .nx{right:18px; top:50%; transform:translateY(-50%)}
+@media (max-width:1000px){.pgrid{grid-template-columns:repeat(2,1fr)} .feat .cover{height:60vh}}
+@media (max-width:640px){.pgrid{grid-template-columns:1fr} .feat .cover{height:62vh} .lb .pv,.lb .nx{top:auto; bottom:calc(60px + env(safe-area-inset-bottom,0px)); transform:none}}
+.exp-grid.three{grid-template-columns:repeat(3,1fr)}
+.exp-note{color:var(--text-dim); font-size:15px; margin:0 0 14px}
+.steps-dark{list-style:none; padding:0; margin:48px 0 0; display:grid; grid-template-columns:repeat(4,1fr); position:relative}
+.steps-dark::before{content:""; position:absolute; top:6px; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--indigo),var(--lavender),var(--lime))}
+.steps-dark li{padding:30px 16px 0 0; position:relative; font-weight:600; font-size:17px}
+.steps-dark li::before{content:""; position:absolute; top:0; left:0; width:14px; height:14px; border-radius:50%; background:#fff; box-shadow:0 0 0 4px rgba(146,150,242,.3),0 0 18px rgba(146,150,242,.9)}
+.steps-dark .mono{display:block; color:var(--lavender); font-size:12px; margin-bottom:6px; font-weight:400}
+@media (max-width:1000px){.exp-grid.three{grid-template-columns:1fr}.steps-dark{grid-template-columns:1fr 1fr; row-gap:24px}.steps-dark::before{display:none}}
+.ip{padding:130px 0 110px}
+.ip-card{display:grid; grid-template-columns:.85fr 1.15fr; gap:44px; padding:40px; margin-top:40px; align-items:start}
+.ip-card .ip-logo{height:110px; width:auto; margin-bottom:22px}
+.ip-card .ip-wordmark{font-size:clamp(30px,3.4vw,46px); font-weight:800; line-height:1.02; letter-spacing:-.02em; margin:0 0 6px}
+.ip-card .ip-tag{font-family:var(--mono); color:var(--lime); font-size:13px; display:block; margin-bottom:18px}
+.ip-card p{color:var(--text-dim); font-size:16px}
+.ip-card ul{list-style:none; margin:18px 0 0; padding:0}
+.ip-card li{padding:11px 0 11px 24px; border-top:1px solid var(--line); position:relative; font-size:15.5px}
+.ip-card li::before{content:""; position:absolute; left:2px; top:17px; width:11px; height:11px; background:var(--lime); clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+.ip-card li b{font-weight:700}
+@media (max-width:1000px){.ip-card{grid-template-columns:1fr; padding:26px}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="gridlines" aria-hidden="true"></div>
+  <div class="wrap topbar">
+    <a href="#tentang">About</a><a href="#expertise">Expertise</a><a href="#creative">Creative &amp; Digital</a><a href="#klien">Clients</a><a href="#trail">Trail of Fire</a><a href="#portofolio">Portfolio</a><a href="#ip">Our IP</a><a href="#cases">Case Studies</a><a href="#kontak">Contact</a>
+  </div>
+  <div class="wrap hero-body">
+    <div>
+      <p class="hero-kicker">Our Company at a Glance</p>
+      <h1 style="margin:0"><img class="hero-logo" src="img/4362fe70ce68.png" alt="Juara Event &amp; Creative"></h1>
+      <p class="hero-intro">Full-service event organizer based in Indonesia, bringing ideas to life for more than 15 years.</p>
+    </div>
+  </div>
+  <div class="hero-star" aria-hidden="true"><img src="img/e6bd7ecd8756.jpg" alt=""></div>
+  <div class="wrap hero-foot mono">
+    <div>Company Profile<br>PT Juara Berhasil Berkah Sejahtera</div>
+    <div class="year">20<br>26</div>
+  </div>
+</header>
+<main>
+<section class="about dark" id="tentang">
+  <div class="wrap">
+    <span class="section-label">Who we are</span>
+    <h2 class="tt h-xl"><em>For more than</em> 15 years, Juara has <em>been bringing</em> ideas to life through <em>exceptional</em> event experiences.</h2>
+  </div>
+  <img class="about-path" src="img/16f174e3f93a.jpg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="about-row">
+      <div class="facts" style="grid-template-columns:1fr 1fr"><div><strong>15+ years</strong><span>of experience as a full-service event organizer</span></div><div><strong>6 countries</strong><span>on our trail of fire so far</span></div></div>
+      <div>
+        <p>Juara is a <b>full-service event organizer</b> with more than <b>15 years of experience</b> based in Indonesia. Led by passionate and talented individuals who have mastered the art of providing <b>top-notch event services</b> from planning to completion. We take a thoughtful approach in understanding client's objectives before meticulously bringing the ideas into life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="light">
+<section class="values">
+  <div class="wrap">
+    <span class="section-label">What we value</span>
+    <h2 class="tt h-l"><em>We strive</em> for excellence, do our utmost to <em>provide the best,</em> and aim for success.</h2>
+    <img class="values-img" src="img/79a15c2b5f53.jpg" alt="" aria-hidden="true">
+    <div class="values-cols flow"><p>We value excellence and integrity to deliver remarkable experiences to the guest with an emphasis on bringing innovation to the table. Putting our highest endeavor in executing ideas is our foundation to bring together the client's visions.</p></div>
+  </div>
+</section>
+</div>
+<section class="expertise dark gridlines" id="expertise">
+  <div class="wrap">
+    <span class="section-label">Our expertise</span>
+    <h2 class="tt h-xl"><em>Services and products</em> built around every event.</h2>
+    <div class="exp-grid">
+      <div class="exp glass"><h3>Services</h3><span class="mono">What we handle for you</span><ul>
+        <li>Creative &amp; Plan Development</li><li>Execution Handling</li><li>Talent &amp; Logistic Management</li><li>Local Authority Liaison</li><li>VVIP Protocol Handling</li></ul></div>
+      <div class="exp glass"><h3>Product</h3><span class="mono">What we deliver</span><ul>
+        <li>Audience Flow Management</li><li>Creative Agency</li><li>Music Concert &amp; Sport Event Management</li><li>Event Activation</li><li>MICE Event</li></ul></div>
+    </div>
+  </div>
+</section>
+<section class="feature dark">
+  <div class="wrap feature-grid">
+    <div class="feature-media"><img src="img/751b9373f3c9.webp" alt="Show control at the OCBC Disney Cards Grand Launch"></div>
+    <div>
+      <span class="section-label">Event Organizer &amp; Producer</span>
+      <h2 class="tt h-l"><em>From production</em> to post-event evaluation.</h2>
+      <ol>
+        <li><span class="mono">01</span>Production &amp; Properties</li>
+        <li><span class="mono">02</span>Talent &amp; Manpower Management</li>
+        <li><span class="mono">03</span>Event Execution</li>
+        <li><span class="mono">04</span>Event Supervisor, Monitoring, and Evaluation</li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="expertise dark gridlines" id="creative">
+  <div class="wrap">
+    <span class="section-label">Brand, creative &amp; digital</span>
+    <h2 class="tt h-xl"><em>Beyond the event,</em> we build the brand around it.</h2>
+    <p class="lede" style="margin-top:18px;color:var(--text-dim)">From brand strategy and content to digital amplification and on-ground activation, one team carries the idea from insight to results.</p>
+    <div class="exp-grid three">
+      <div class="exp glass"><h3>Brand Strategy &amp; Creative</h3><span class="mono">Every brand has a story to tell</span>
+        <p class="exp-note">We uplift the brand message with a cohesive narrative and intriguing visuals that impact people.</p><ul>
+        <li>Brand Communication</li><li>Creative Production</li><li>Integrated Campaign</li><li>Market Research</li></ul></div>
+      <div class="exp glass"><h3>Digital Asset &amp; Advertising</h3><span class="mono">Stand out from the crowd</span>
+        <p class="exp-note">We help brands interact with their target audience while keeping them distinct in a borderless era.</p><ul>
+        <li>Social Media Management</li><li>Asset Development</li><li>Digital Ads</li><li>Media Placement</li><li>KOL Management</li></ul></div>
+      <div class="exp glass"><h3>Production &amp; Activation</h3><span class="mono">Create experience</span>
+        <p class="exp-note">We help brands inspire action and build deeper connections with their audience while delivering results.</p><ul>
+        <li>Event Management</li><li>Sampling Selling</li><li>Community</li><li>Campaign Activation</li></ul></div>
+    </div>
+    <ol class="steps-dark">
+      <li><span class="mono">01</span>Problem Understanding</li>
+      <li><span class="mono">02</span>Insight Discovery</li>
+      <li><span class="mono">03</span>Strategy Development</li>
+      <li><span class="mono">04</span>Ideas Exploration</li>
+    </ol>
+  </div>
+</section>
+<section class="clients light" id="klien">
+  <div class="wrap">
+    <span class="section-label">Our client</span>
+    <h2 class="tt h-l"><em>Trusted by</em> leading brands and institutions.</h2>
+    <img class="clients-logos" src="img/549eb4382176.png" alt="Client logos: Mayora, GEN, Kemnaker, Bukalapak, Gudang Garam, Danone, Kimbo, Haan, NU, ABC Heinz, Bintang Toedjoe, Sari Roti, Bellfoods, BKKBN, Kominfo, Indosat Ooredoo, Coca-Cola Amatil, PNM, Dunhill, AXA, Telkom Indonesia, Dua Kelinci, Djarum, Kementerian Agama RI, Honda, MGPA, InJourney, PwC, Angkasa Pura II">
+  </div>
+</section>
+<section class="trail dark" id="trail">
+  <div class="wrap trail-grid">
+    <div>
+      <span class="section-label">Trail of fire</span>
+      <h2 class="tt h-xl"><em>It's a continuous</em> process.</h2>
+      <p style="margin-top:22px">Soon we will set the world with our fire spirit.</p>
+      <ul class="legend"><li>Indonesia</li><li>United States</li><li>Italy</li><li>Germany</li><li>Singapore</li><li>Malaysia</li></ul>
+    </div>
+    <img class="trail-map" style="border-radius:22px;filter:none" src="img/46a11168328d.webp" alt="Globe showing Juara's international trail">
+  </div>
+</section>
+<section class="portfolio dark" id="portofolio">
+  <div class="wrap">
+    <span class="section-label">Our works</span>
+    <h2 class="tt h-xl"><em>Ideas into</em> experiences.</h2>
+    <p class="lede" style="margin-top:18px;color:var(--text-dim)">Different challenges. Different audiences. Different stories.</p>
+    <div class="projects"><div class="featured"><article class="feat" tabindex="0" role="button" aria-label="Open photos: Majelis Ulama Indonesia"><img class="cover" loading="lazy" decoding="async" src="img/dc10e05a04ad.webp" alt="Majelis Ulama Indonesia"><div class="feat-cap"><span class="mono">2026</span><h3>Majelis Ulama Indonesia</h3><p>Bersatu Dalam Munajat Untuk Keselamatan Bangsa · Masjid Istiqlal Jakarta</p><span class="count mono">5 photos &rarr;</span></div><template><img src="img/2ccb4d51b1a5.webp" alt="Majelis Ulama Indonesia"><img src="img/8ac7f9f60216.webp" alt="Majelis Ulama Indonesia"><img src="img/88e43e6f7dc0.webp" alt="Majelis Ulama Indonesia"><img src="img/bc42114211c4.webp" alt="Majelis Ulama Indonesia"></template></article><article class="feat" tabindex="0" role="button" aria-label="Open photos: OCBC Disney Cards Grand Launch"><img class="cover" loading="lazy" decoding="async" src="img/476ff54de803.webp" alt="OCBC Disney Cards Grand Launch"><div class="feat-cap"><span class="mono">2025</span><h3>OCBC Disney Cards Grand Launch</h3><p>A Magical Night of Music · Sentul International Convention Center</p><span class="count mono">9 photos &rarr;</span></div><template><img src="img/bd4a046804e7.webp" alt="OCBC Disney Cards Grand Launch"><img src="img/ad40b2e2379e.webp" alt="OCBC Disney Cards Grand Launch"><img src="img/4ba4f250694b.webp" alt="OCBC Disney Cards Grand Launch"><img src="img/ec949c2a395d.webp" alt="OCBC Disney Cards Grand Launch"><img src="img/3ca6913c3564.webp" alt="OCBC Disney Cards Grand Launch"><img src="img/9e0215d840b7.webp" alt="OCBC Disney Cards Grand Launch"><img src="img/e321fe4f29e7.webp" alt="OCBC Disney Cards Grand Launch"><img src="img/7b40f1c256a6.webp" alt="OCBC Disney Cards Grand Launch"></template></article><article class="feat" tabindex="0" role="button" aria-label="Open photos: Pertamina Grand Prix"><img class="cover" loading="lazy" decoding="async" src="img/6cea3fb8b14e.webp" alt="Pertamina Grand Prix"><div class="feat-cap"><span class="mono">2025</span><h3>Pertamina Grand Prix</h3><p>Sirkuit Internasional Pertamina Mandalika</p><span class="count mono">5 photos &rarr;</span></div><template><img src="img/6a1501cfccc0.webp" alt="Pertamina Grand Prix"><img src="img/d1d534ed106a.webp" alt="Pertamina Grand Prix"><img src="img/e7ee5526a19d.webp" alt="Pertamina Grand Prix"><img src="img/6cea3fb8b14e.webp" alt="Pertamina Grand Prix"></template></article><article class="feat" tabindex="0" role="button" aria-label="Open photos: F1H2O"><img class="cover" loading="lazy" decoding="async" src="img/24415686d26c.webp" alt="F1H2O"><div class="feat-cap"><span class="mono">2023 · 2024 · 2025</span><h3>F1H2O</h3><p>Lake Toba, Indonesia</p><span class="count mono">11 photos &rarr;</span></div><template><img src="img/11ef705f6ae7.webp" alt="F1H2O"><img src="img/681799505088.webp" alt="F1H2O"><img src="img/24415686d26c.webp" alt="F1H2O"><img src="img/560433b76025.webp" alt="F1H2O"><img src="img/13d49216359e.webp" alt="F1H2O"><img src="img/4e61fb078c12.webp" alt="F1H2O"><img src="img/f0c83dc30aa2.webp" alt="F1H2O"><img src="img/05285f698f6b.webp" alt="F1H2O"><img src="img/be2a05cd999b.webp" alt="F1H2O"><img src="img/3136fbd7a3f7.webp" alt="F1H2O"></template></article><article class="feat" tabindex="0" role="button" aria-label="Open photos: Djarum 76 Smash Heppiii"><img class="cover" loading="lazy" decoding="async" src="img/c82553fdecfc.webp" alt="Djarum 76 Smash Heppiii"><div class="feat-cap"><span class="mono">2025</span><h3>Djarum 76 Smash Heppiii</h3><p>Tulungagung · Lamongan · Jember</p><span class="count mono">7 photos &rarr;</span></div><template><img src="img/36905f15e954.webp" alt="Djarum 76 Smash Heppiii"><img src="img/a7b807be1f2a.webp" alt="Djarum 76 Smash Heppiii"><img src="img/a3d03836d2c6.webp" alt="Djarum 76 Smash Heppiii"><img src="img/82088871d101.webp" alt="Djarum 76 Smash Heppiii"><img src="img/36bb1858bf66.webp" alt="Djarum 76 Smash Heppiii"><img src="img/3efb3de57726.webp" alt="Djarum 76 Smash Heppiii"></template></article><article class="feat" tabindex="0" role="button" aria-label="Open photos: Kongres PSI 2025"><img class="cover" loading="lazy" decoding="async" src="img/6e32746ba963.webp" alt="Kongres PSI 2025"><div class="feat-cap"><span class="mono">2025</span><h3>Kongres PSI 2025</h3><p>Edutorium UMS · Solo</p><span class="count mono">9 photos &rarr;</span></div><template><img src="img/4a4366d97663.webp" alt="Kongres PSI 2025"><img src="img/084a940508e6.webp" alt="Kongres PSI 2025"><img src="img/7618875a54bb.webp" alt="Kongres PSI 2025"><img src="img/acf3f47a3d0b.webp" alt="Kongres PSI 2025"><img src="img/c0df0f67dfc5.webp" alt="Kongres PSI 2025"><img src="img/5205f16b738e.webp" alt="Kongres PSI 2025"><img src="img/f1c6721dd55a.webp" alt="Kongres PSI 2025"><img src="img/fe92c9987968.webp" alt="Kongres PSI 2025"></template></article><article class="feat" tabindex="0" role="button" aria-label="Open photos: PwC Fest"><img class="cover" loading="lazy" decoding="async" src="img/19b01bd02db7.webp" alt="PwC Fest"><div class="feat-cap"><span class="mono">2024</span><h3>PwC Fest</h3><p>Mindful You Joyful Earth · Tennis Indoor Senayan</p><span class="count mono">5 photos &rarr;</span></div><template><img src="img/2ac72884e003.webp" alt="PwC Fest"><img src="img/89e0eebaf102.webp" alt="PwC Fest"><img src="img/8e2449fc4067.webp" alt="PwC Fest"><img src="img/82460618084b.webp" alt="PwC Fest"></template></article><article class="feat" tabindex="0" role="button" aria-label="Open photos: Pesta Rakyat Untuk Indonesia Maju"><img class="cover" loading="lazy" decoding="async" src="img/333200519365.webp" alt="Pesta Rakyat Untuk Indonesia Maju"><div class="feat-cap"><span class="mono">2024</span><h3>Pesta Rakyat Untuk Indonesia Maju</h3><p>TKN 02 · Stadion Utama GBK</p><span class="count mono">4 photos &rarr;</span></div><template><img src="img/25b5753e70d3.webp" alt="Pesta Rakyat Untuk Indonesia Maju"><img src="img/f49d76bcef05.webp" alt="Pesta Rakyat Untuk Indonesia Maju"><img src="img/fc29479c4479.webp" alt="Pesta Rakyat Untuk Indonesia Maju"></template></article></div><div class="sub-head"><h3>More projects</h3><p>Tap any project to see its photos.</p></div><div class="pgrid"><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Liga 1 Arema FC"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/ca1913479acf.webp" alt="Liga 1 Arema FC"><span class="count mono">5</span></div><div class="pbody"><span class="mono">2025 · 2026 · 2027</span><h3>Liga 1 Arema FC</h3><p>Local Organizing Committee · Stadion Kanjuruhan Malang</p></div><template><img src="img/eeeb832acbc5.webp" alt="Liga 1 Arema FC"><img src="img/7400f0177ea9.webp" alt="Liga 1 Arema FC"><img src="img/88a9a2171be9.webp" alt="Liga 1 Arema FC"><img src="img/9d29d3be035a.webp" alt="Liga 1 Arema FC"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Rockin Surabaya Showcase 2026"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/5b7c67d89f3f.webp" alt="Rockin Surabaya Showcase 2026"><span class="count mono">18</span></div><div class="pbody"><span class="mono">2026</span><h3>Rockin Surabaya Showcase 2026</h3><p>Madiun · Jember · Mojokerto · Malang · 1,191 tickets sold</p></div><template><img src="img/a3e4dfea24f3.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/527d10a82a42.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/3244878a636b.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/b317b8cc071c.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/c3445ab07101.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/96b01658755e.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/96869827d5c7.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/317c40ca55a3.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/be49712b0cbd.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/197ec048331f.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/dec122ee3fc2.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/20d03821645e.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/3f5bb055d73a.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/3feb509ef9f4.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/0ad399157e9f.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/ee61365bc4fd.webp" alt="Rockin Surabaya Showcase 2026"><img src="img/ca682201e9b4.webp" alt="Rockin Surabaya Showcase 2026"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Harvetnas"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/a5d32f6aff1b.webp" alt="Harvetnas"><span class="count mono">4</span></div><div class="pbody"><span class="mono">2026</span><h3>Harvetnas</h3><p>Peringatan Hari Veteran Nasional</p></div><template><img src="img/e22a5de626ac.webp" alt="Harvetnas"><img src="img/15630f7531a7.webp" alt="Harvetnas"><img src="img/e1d0e96a5426.webp" alt="Harvetnas"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: BRI Porseni NU"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/b842362f9a10.webp" alt="BRI Porseni NU"><span class="count mono">4</span></div><div class="pbody"><span class="mono">2026</span><h3>BRI Porseni NU</h3></div><template><img src="img/663a0ead5579.webp" alt="BRI Porseni NU"><img src="img/05aa0b35646e.webp" alt="BRI Porseni NU"><img src="img/11a6da797b1f.webp" alt="BRI Porseni NU"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Djarum 76 Road to IAK"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/57b2dacb53ec.webp" alt="Djarum 76 Road to IAK"><span class="count mono">5</span></div><div class="pbody"><span class="mono">2025</span><h3>Djarum 76 Road to IAK</h3><p>Jember, Pasuruan, Sidoarjo &amp; Madiun</p></div><template><img src="img/d7ae51c129cf.webp" alt="Djarum 76 Road to IAK"><img src="img/170eb6894f50.webp" alt="Djarum 76 Road to IAK"><img src="img/257c4fee34ca.webp" alt="Djarum 76 Road to IAK"><img src="img/08525c8ea517.webp" alt="Djarum 76 Road to IAK"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Liga 1 Persija Jakarta"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/b8e12e8a0063.webp" alt="Liga 1 Persija Jakarta"><span class="count mono">2</span></div><div class="pbody"><span class="mono">2025</span><h3>Liga 1 Persija Jakarta</h3><p>Local Organizing Committee · Jakarta International Stadium</p></div><template><img src="img/84d312cbdcae.webp" alt="Liga 1 Persija Jakarta"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Warehouse Launching"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/344f1fd9efb7.webp" alt="Warehouse Launching"><span class="count mono">5</span></div><div class="pbody"><span class="mono">2025</span><h3>Warehouse Launching</h3><p>APL Logistics</p></div><template><img src="img/862b4fd32f54.webp" alt="Warehouse Launching"><img src="img/15c6bad51c92.webp" alt="Warehouse Launching"><img src="img/941e34d09d6a.webp" alt="Warehouse Launching"><img src="img/4d4062700ad0.webp" alt="Warehouse Launching"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: PSI Doa Untuk Republik Tercinta"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/6d5c7e22e0c2.webp" alt="PSI Doa Untuk Republik Tercinta"><span class="count mono">8</span></div><div class="pbody"><span class="mono">2025</span><h3>PSI Doa Untuk Republik Tercinta</h3><p>GOR Bulungan, Jakarta Selatan</p></div><template><img src="img/8e7f9d6dc4a4.webp" alt="PSI Doa Untuk Republik Tercinta"><img src="img/f0dfc8798dad.webp" alt="PSI Doa Untuk Republik Tercinta"><img src="img/21bf3ef04c0a.webp" alt="PSI Doa Untuk Republik Tercinta"><img src="img/149e48db8e26.webp" alt="PSI Doa Untuk Republik Tercinta"><img src="img/6e1ffa28f385.webp" alt="PSI Doa Untuk Republik Tercinta"><img src="img/c2a99fe0e4ce.webp" alt="PSI Doa Untuk Republik Tercinta"><img src="img/e2ec437694e6.webp" alt="PSI Doa Untuk Republik Tercinta"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Launching BRI Qlola"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/fa7abcb2bb39.webp" alt="Launching BRI Qlola"><span class="count mono">5</span></div><div class="pbody"><span class="mono">2025</span><h3>Launching BRI Qlola</h3></div><template><img src="img/e99b77805382.webp" alt="Launching BRI Qlola"><img src="img/78560654ba39.webp" alt="Launching BRI Qlola"><img src="img/d530e02d8acb.webp" alt="Launching BRI Qlola"><img src="img/5b2d4da0b1ff.webp" alt="Launching BRI Qlola"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: BRI Katumbiri Expo"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/f535a6ff1e2d.webp" alt="BRI Katumbiri Expo"><span class="count mono">4</span></div><div class="pbody"><span class="mono">2025</span><h3>BRI Katumbiri Expo</h3></div><template><img src="img/492f4b4104ab.webp" alt="BRI Katumbiri Expo"><img src="img/3ebb24aa1d10.webp" alt="BRI Katumbiri Expo"><img src="img/337f700474cf.webp" alt="BRI Katumbiri Expo"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Djarum 76 Smash Heppiii"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/e7091aa00521.webp" alt="Djarum 76 Smash Heppiii"><span class="count mono">5</span></div><div class="pbody"><span class="mono">2024</span><h3>Djarum 76 Smash Heppiii</h3><p>Bangkalan, Kediri, Probolinggo</p></div><template><img src="img/efa867f5e1d2.webp" alt="Djarum 76 Smash Heppiii"><img src="img/1cf2127b4a74.webp" alt="Djarum 76 Smash Heppiii"><img src="img/d5d94e7477c8.webp" alt="Djarum 76 Smash Heppiii"><img src="img/58e1540f02b1.webp" alt="Djarum 76 Smash Heppiii"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Hubride Banyuwangi"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/9a44d1102388.webp" alt="Hubride Banyuwangi"><span class="count mono">5</span></div><div class="pbody"><span class="mono">2024</span><h3>Hubride Banyuwangi</h3><p>Kementerian Perhubungan</p></div><template><img src="img/0df083ed7df8.webp" alt="Hubride Banyuwangi"><img src="img/3853d969c4e0.webp" alt="Hubride Banyuwangi"><img src="img/46e547ea9e7f.webp" alt="Hubride Banyuwangi"><img src="img/b85ec239fec5.webp" alt="Hubride Banyuwangi"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Pre-Retirement Course Program"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/40f9cb72e2ce.webp" alt="Pre-Retirement Course Program"><span class="count mono">18</span></div><div class="pbody"><span class="mono">2024</span><h3>Pre-Retirement Course Program</h3><p>PT Angkasa Pura II · Fieldtrip &amp; Gala Dinner · Bali</p></div><template><img src="img/f86c724d7680.webp" alt="Pre-Retirement Course Program"><img src="img/fcb1d012b38f.webp" alt="Pre-Retirement Course Program"><img src="img/fd1211e12072.webp" alt="Pre-Retirement Course Program"><img src="img/f953149c185d.webp" alt="Pre-Retirement Course Program"><img src="img/c5fde6643e01.webp" alt="Pre-Retirement Course Program"><img src="img/fc8c3c20cbde.webp" alt="Pre-Retirement Course Program"><img src="img/a9118e6dd1dc.webp" alt="Pre-Retirement Course Program"><img src="img/3d2331120eb6.webp" alt="Pre-Retirement Course Program"><img src="img/2cef53a33b44.webp" alt="Pre-Retirement Course Program"><img src="img/13a9d2062e60.webp" alt="Pre-Retirement Course Program"><img src="img/61796cdc7cd8.webp" alt="Pre-Retirement Course Program"><img src="img/3e6bc84ac2f9.webp" alt="Pre-Retirement Course Program"><img src="img/d50f9204beec.webp" alt="Pre-Retirement Course Program"><img src="img/ff8d5d8a9f1d.webp" alt="Pre-Retirement Course Program"><img src="img/743c2f0cae93.webp" alt="Pre-Retirement Course Program"><img src="img/fde1d932f7a3.webp" alt="Pre-Retirement Course Program"><img src="img/c3561c9dcc57.webp" alt="Pre-Retirement Course Program"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: BRI Dhawafest"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/878bcde99404.webp" alt="BRI Dhawafest"><span class="count mono">4</span></div><div class="pbody"><span class="mono">2024</span><h3>BRI Dhawafest</h3></div><template><img src="img/5bcc28ef0980.webp" alt="BRI Dhawafest"><img src="img/66a2ef6eb3c4.webp" alt="BRI Dhawafest"><img src="img/1115446fe47e.webp" alt="BRI Dhawafest"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: BNI Investor Daily Summit"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/fdf8ec0eb661.webp" alt="BNI Investor Daily Summit"><span class="count mono">6</span></div><div class="pbody"><span class="mono">2023</span><h3>BNI Investor Daily Summit</h3></div><template><img src="img/2858df688b55.webp" alt="BNI Investor Daily Summit"><img src="img/1b35df315dbd.webp" alt="BNI Investor Daily Summit"><img src="img/97efbf775698.webp" alt="BNI Investor Daily Summit"><img src="img/2871ec0cccbd.webp" alt="BNI Investor Daily Summit"><img src="img/68f40c571b6d.webp" alt="BNI Investor Daily Summit"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: UCI MTB Eliminator World Cup"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/4ce9a20d5df3.webp" alt="UCI MTB Eliminator World Cup"><span class="count mono">6</span></div><div class="pbody"><span class="mono">2022</span><h3>UCI MTB Eliminator World Cup</h3><p>Stadion Tuah Pahoe · Palangka Raya</p></div><template><img src="img/fab5a84725e6.webp" alt="UCI MTB Eliminator World Cup"><img src="img/59465d1e15bf.webp" alt="UCI MTB Eliminator World Cup"><img src="img/145630ec5084.webp" alt="UCI MTB Eliminator World Cup"><img src="img/c1556999bbcf.webp" alt="UCI MTB Eliminator World Cup"><img src="img/d39c2214cff1.webp" alt="UCI MTB Eliminator World Cup"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: GG Road to Battle"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/604d46ae5432.webp" alt="GG Road to Battle"><span class="count mono">3</span></div><div class="pbody"><span class="mono">2019</span><h3>GG Road to Battle</h3><p>Gudang Garam · Show Your Pride</p></div><template><img src="img/382002a1659e.webp" alt="GG Road to Battle"><img src="img/dffd78325f1a.webp" alt="GG Road to Battle"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Bukalapak Brand Activation &amp; Sponsorship"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/952b922127c7.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><span class="count mono">21</span></div><div class="pbody"><span class="mono">2019</span><h3>Bukalapak Brand Activation &amp; Sponsorship</h3><p>Buka Global Malaysia &amp; Singapore · Mother &amp; Baby Fair · IFW · John Mayer Concert</p></div><template><img src="img/97acf99742b9.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/f5368cdafe3a.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/60c36fef3cde.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/8cee5a01f9d4.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/d8028cec2bfe.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/3205d6c9d49d.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/64080af3240a.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/5344efa163b8.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/c253148f3196.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/a6009da0843f.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/170dadbf9300.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/bac47911f5bb.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/4bcf9172fe46.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/ad9b242c7557.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/5b2f8f50abcd.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/73a9e4d54e74.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/0bd40e7d3863.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/54c8f19ab3f6.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/21243cbbd417.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"><img src="img/b0a9d96b11ae.webp" alt="Bukalapak Brand Activation &amp; Sponsorship"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Suryanation Motorland Expo"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/3e9ca3c05931.webp" alt="Suryanation Motorland Expo"><span class="count mono">13</span></div><div class="pbody"><span class="mono">2017 – 2019</span><h3>Suryanation Motorland Expo</h3><p>Germany · Italy · USA · Winners’ trip, 3 consecutive years · incl. Motor Bike Expo Verona</p></div><template><img src="img/dd96accf0170.webp" alt="Suryanation Motorland Expo"><img src="img/9deceb7d25c2.webp" alt="Suryanation Motorland Expo"><img src="img/14e3e248d1cb.webp" alt="Suryanation Motorland Expo"><img src="img/0467753d7fb4.webp" alt="Suryanation Motorland Expo"><img src="img/6429610746e5.webp" alt="Suryanation Motorland Expo"><img src="img/4a07d62aa74f.webp" alt="Suryanation Motorland Expo"><img src="img/d56843c525f2.webp" alt="Suryanation Motorland Expo"><img src="img/3790ff7ef931.webp" alt="Suryanation Motorland Expo"><img src="img/620a37676759.webp" alt="Suryanation Motorland Expo"><img src="img/c7dabd6a7c3d.webp" alt="Suryanation Motorland Expo"><img src="img/d0c67021a495.webp" alt="Suryanation Motorland Expo"><img src="img/1db1067bdbe0.webp" alt="Suryanation Motorland Expo"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Suryanation Motorland Battle"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/056a493af2a0.webp" alt="Suryanation Motorland Battle"><span class="count mono">16</span></div><div class="pbody"><span class="mono">2017 – 2019</span><h3>Suryanation Motorland Battle</h3><p>Gudang Garam · Five major events in big cities · Winners go to Motorland Expo</p></div><template><img src="img/018cd21fdb5a.webp" alt="Suryanation Motorland Battle"><img src="img/39b1a3627ba9.webp" alt="Suryanation Motorland Battle"><img src="img/44aa72f7185e.webp" alt="Suryanation Motorland Battle"><img src="img/697b59a85e93.webp" alt="Suryanation Motorland Battle"><img src="img/0971caef542d.webp" alt="Suryanation Motorland Battle"><img src="img/f10abdb6fbd9.webp" alt="Suryanation Motorland Battle"><img src="img/d549c2be5c5b.webp" alt="Suryanation Motorland Battle"><img src="img/842a367f6aa0.webp" alt="Suryanation Motorland Battle"><img src="img/ac1f0b6f6acc.webp" alt="Suryanation Motorland Battle"><img src="img/040646fc2191.webp" alt="Suryanation Motorland Battle"><img src="img/eb261154eb77.webp" alt="Suryanation Motorland Battle"><img src="img/5f3bc68cc5d9.webp" alt="Suryanation Motorland Battle"><img src="img/821ffb33e06a.webp" alt="Suryanation Motorland Battle"><img src="img/a8bca2ab1dc3.webp" alt="Suryanation Motorland Battle"><img src="img/75cc5c4b96b4.webp" alt="Suryanation Motorland Battle"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Suryanation Motorland Garage"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/0b96c499e220.webp" alt="Suryanation Motorland Garage"><span class="count mono">8</span></div><div class="pbody"><span class="mono">2016 – 2018</span><h3>Suryanation Motorland Garage</h3><p>Gudang Garam · Small events in small cities</p></div><template><img src="img/0c9e0f561fd8.webp" alt="Suryanation Motorland Garage"><img src="img/22e40cac9850.webp" alt="Suryanation Motorland Garage"><img src="img/9416f145d05e.webp" alt="Suryanation Motorland Garage"><img src="img/855e80ccd929.webp" alt="Suryanation Motorland Garage"><img src="img/69df4692aa4a.webp" alt="Suryanation Motorland Garage"><img src="img/c79ddba08d1b.webp" alt="Suryanation Motorland Garage"><img src="img/39eff3ca7468.webp" alt="Suryanation Motorland Garage"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Intersport World Stage"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/536833d61d00.webp" alt="Intersport World Stage"><span class="count mono">18</span></div><div class="pbody"><span class="mono">2017</span><h3>Intersport World Stage</h3><p>Drift · Gymkhana · Proper Car Contest · Live Music</p></div><template><img src="img/c9687e746a01.webp" alt="Intersport World Stage"><img src="img/2fd87dc2af16.webp" alt="Intersport World Stage"><img src="img/e29f8c4ab532.webp" alt="Intersport World Stage"><img src="img/9da5e5326747.webp" alt="Intersport World Stage"><img src="img/baf0080fb00f.webp" alt="Intersport World Stage"><img src="img/28d1459109f5.webp" alt="Intersport World Stage"><img src="img/124defcd34c9.webp" alt="Intersport World Stage"><img src="img/53995ef54e9a.webp" alt="Intersport World Stage"><img src="img/b3e44cc9c7ff.webp" alt="Intersport World Stage"><img src="img/779cd11edccb.webp" alt="Intersport World Stage"><img src="img/1de8a71e4162.webp" alt="Intersport World Stage"><img src="img/544202b1683d.webp" alt="Intersport World Stage"><img src="img/5d25f827d392.webp" alt="Intersport World Stage"><img src="img/e289f1f1a6ec.webp" alt="Intersport World Stage"><img src="img/dfdcb2e9d40b.webp" alt="Intersport World Stage"><img src="img/38222934a056.webp" alt="Intersport World Stage"><img src="img/27e111750e58.webp" alt="Intersport World Stage"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Intersport VR Motion Race Simulator"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/7328873c675e.webp" alt="Intersport VR Motion Race Simulator"><span class="count mono">7</span></div><div class="pbody"><span class="mono">2017</span><h3>Intersport VR Motion Race Simulator</h3><p>Grand Metropolitan Mall Bekasi · Cibinong City Mall · Jogja City Mall · Grand City Mall Surabaya</p></div><template><img src="img/a0e67c996f53.webp" alt="Intersport VR Motion Race Simulator"><img src="img/8c4fb49de897.webp" alt="Intersport VR Motion Race Simulator"><img src="img/6ec20f838cc7.webp" alt="Intersport VR Motion Race Simulator"><img src="img/ffe998b3d8d0.webp" alt="Intersport VR Motion Race Simulator"><img src="img/082bb010f44c.webp" alt="Intersport VR Motion Race Simulator"><img src="img/a8911233dd05.webp" alt="Intersport VR Motion Race Simulator"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Intersport Passion Race"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/9b529e60623e.webp" alt="Intersport Passion Race"><span class="count mono">9</span></div><div class="pbody"><span class="mono">2016</span><h3>Intersport Passion Race</h3><p>Street Race · Drift Show · Slot Car · Live Music</p></div><template><img src="img/a90e93fd8f4b.webp" alt="Intersport Passion Race"><img src="img/4bbfa3323ca9.webp" alt="Intersport Passion Race"><img src="img/b0dc0cdbd2cf.webp" alt="Intersport Passion Race"><img src="img/2b888fe561b2.webp" alt="Intersport Passion Race"><img src="img/100eee1505b6.webp" alt="Intersport Passion Race"><img src="img/6ea09b261441.webp" alt="Intersport Passion Race"><img src="img/c8896db23cf7.webp" alt="Intersport Passion Race"><img src="img/0f7d57ff3094.webp" alt="Intersport Passion Race"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Aquabike Indonesian Championship Series"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/3b42b9829350.webp" alt="Aquabike Indonesian Championship Series"><span class="count mono">5</span></div><div class="pbody"><h3>Aquabike Indonesian Championship Series</h3><p>Lake Toba, Indonesia</p></div><template><img src="img/ee21fcea0ce0.webp" alt="Aquabike Indonesian Championship Series"><img src="img/e98a5ef7d296.webp" alt="Aquabike Indonesian Championship Series"><img src="img/e0ea323651bc.webp" alt="Aquabike Indonesian Championship Series"><img src="img/d8c864e58f79.webp" alt="Aquabike Indonesian Championship Series"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Jalan Sehat NU"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/391829d8a718.webp" alt="Jalan Sehat NU"><span class="count mono">5</span></div><div class="pbody"><h3>Jalan Sehat NU</h3><p>Nahdlatul Ulama · Kota Solo</p></div><template><img src="img/12b6adf4d18f.webp" alt="Jalan Sehat NU"><img src="img/4a5707f166c9.webp" alt="Jalan Sehat NU"><img src="img/9c9b9bc1a893.webp" alt="Jalan Sehat NU"><img src="img/0f117d8d9bae.webp" alt="Jalan Sehat NU"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: HUT PSI 9th Dendang Sayang PSI Menang"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/057120666519.webp" alt="HUT PSI 9th Dendang Sayang PSI Menang"><span class="count mono">5</span></div><div class="pbody"><h3>HUT PSI 9th Dendang Sayang PSI Menang</h3><p>Partai Solidaritas Indonesia, Semarang</p></div><template><img src="img/a49423a28a00.webp" alt="HUT PSI 9th Dendang Sayang PSI Menang"><img src="img/dd4ec3fdc736.webp" alt="HUT PSI 9th Dendang Sayang PSI Menang"><img src="img/5be5dfcad126.webp" alt="HUT PSI 9th Dendang Sayang PSI Menang"><img src="img/af5229a64a10.webp" alt="HUT PSI 9th Dendang Sayang PSI Menang"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: PSI Mawar Melawan"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/af953a9b473f.webp" alt="PSI Mawar Melawan"><span class="count mono">5</span></div><div class="pbody"><h3>PSI Mawar Melawan</h3><p>Partai Solidaritas Indonesia · 5 Titik Kota</p></div><template><img src="img/dc90d8268083.webp" alt="PSI Mawar Melawan"><img src="img/614b967c1da3.webp" alt="PSI Mawar Melawan"><img src="img/01d9a0487f68.webp" alt="PSI Mawar Melawan"><img src="img/73dd8795b441.webp" alt="PSI Mawar Melawan"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: DEV-X Kemenag"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/5676e8d903a1.webp" alt="DEV-X Kemenag"><span class="count mono">5</span></div><div class="pbody"><h3>DEV-X Kemenag</h3><p>Jakarta Convention Center (JCC)</p></div><template><img src="img/c68791b98801.webp" alt="DEV-X Kemenag"><img src="img/c4f566d97892.webp" alt="DEV-X Kemenag"><img src="img/a69a7d7b23b1.webp" alt="DEV-X Kemenag"><img src="img/5d1af5423e32.webp" alt="DEV-X Kemenag"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Logistik Golf Gathering"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/beef3409b399.webp" alt="Logistik Golf Gathering"><span class="count mono">4</span></div><div class="pbody"><h3>Logistik Golf Gathering</h3><p>PT Pos Indonesia</p></div><template><img src="img/77d1b6f027f2.webp" alt="Logistik Golf Gathering"><img src="img/4ea0cc783f29.webp" alt="Logistik Golf Gathering"><img src="img/f50ff62c3414.webp" alt="Logistik Golf Gathering"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Xiaomi 13T Masterpiece in Sight Launching"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/8b2e5401bf81.webp" alt="Xiaomi 13T Masterpiece in Sight Launching"><span class="count mono">5</span></div><div class="pbody"><h3>Xiaomi 13T Masterpiece in Sight Launching</h3></div><template><img src="img/82683fdac82c.webp" alt="Xiaomi 13T Masterpiece in Sight Launching"><img src="img/f3d6fd87fff2.webp" alt="Xiaomi 13T Masterpiece in Sight Launching"><img src="img/834274629557.webp" alt="Xiaomi 13T Masterpiece in Sight Launching"><img src="img/1d171e56ddb8.webp" alt="Xiaomi 13T Masterpiece in Sight Launching"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Musim Buahagia Sunpride"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/cd51a00eb94d.webp" alt="Musim Buahagia Sunpride"><span class="count mono">5</span></div><div class="pbody"><h3>Musim Buahagia Sunpride</h3><p>Malang · Bali · Bandung · Jogja</p></div><template><img src="img/00ebcd0d4208.webp" alt="Musim Buahagia Sunpride"><img src="img/5f885c4de066.webp" alt="Musim Buahagia Sunpride"><img src="img/280dba418fc3.webp" alt="Musim Buahagia Sunpride"><img src="img/a559358537ac.webp" alt="Musim Buahagia Sunpride"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Petronas Transcending Next Level"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/0cf69e090153.webp" alt="Petronas Transcending Next Level"><span class="count mono">4</span></div><div class="pbody"><h3>Petronas Transcending Next Level</h3><p>Malaysia</p></div><template><img src="img/ef231993372d.webp" alt="Petronas Transcending Next Level"><img src="img/e13dcdc3ed2e.webp" alt="Petronas Transcending Next Level"><img src="img/d0b68a499aa8.webp" alt="Petronas Transcending Next Level"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Peresmian Masjid Raya Sheikh Zayed"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/08ae3b02613d.webp" alt="Peresmian Masjid Raya Sheikh Zayed"><span class="count mono">3</span></div><div class="pbody"><h3>Peresmian Masjid Raya Sheikh Zayed</h3><p>Masjid Raya Sheikh Zayed Solo</p></div><template><img src="img/0915d3cf65a2.webp" alt="Peresmian Masjid Raya Sheikh Zayed"><img src="img/24db2d514fa0.webp" alt="Peresmian Masjid Raya Sheikh Zayed"></template></article><article class="pcard" tabindex="0" role="button" aria-label="Open photos: Konsolidasi Nasional"><div class="pimg"><img class="cover" loading="lazy" decoding="async" src="img/49e621e0e623.webp" alt="Konsolidasi Nasional"><span class="count mono">5</span></div><div class="pbody"><h3>Konsolidasi Nasional</h3><p>Kementerian Pendidikan Dasar dan Menengah · PPSDM, Bogor</p></div><template><img src="img/8f87d07cca8b.webp" alt="Konsolidasi Nasional"><img src="img/e78612c5d2dc.webp" alt="Konsolidasi Nasional"><img src="img/6500d3873c7c.webp" alt="Konsolidasi Nasional"><img src="img/f395643460a5.webp" alt="Konsolidasi Nasional"></template></article></div></div>
+  </div>
+</section>
+<section class="ip dark gridlines" id="ip">
+  <div class="wrap">
+    <span class="section-label">Juara original IP</span>
+    <h2 class="tt h-xl"><em>Events we own</em> and grow ourselves.</h2>
+    <p class="lede" style="margin-top:18px;color:var(--text-dim)">Beyond delivering for clients, Juara builds and operates its own sports properties, from concept and sanctioning to race day.</p>
+    <article class="ip-card glass">
+      <div>
+        <img class="ip-logo" src="img/03a78127f14b.png" alt="Rockets Rollers">
+        <span class="ip-tag">Roller skating championship · Prestasi &amp; Gembira</span>
+        <p>Rockets Rollers is Juara&rsquo;s own roller skating championship, run under PB PORSEROSI rules with PORSEROSI Jawa Timur. It combines professional-standard competition with a festival for athletes, coaches, clubs, schools, supporters, and sponsors, built to grow interest in the sport.</p>
+        <ul>
+          <li><b>Series #1</b>, Sidoarjo, 31 May &ndash; 1 June 2025</li>
+          <li><b>Series #2</b>, Track Sepatu Roda Kanjuruhan, Malang, 3&ndash;5 October 2025</li>
+          <li><b>Competition</b>: Beginner 50 m &amp; 100 m, Standard 300 m, 500 m &amp; 1,000 m, Speed 3,000 m &amp; 5,000 m, Speed Slalom, and Skate Cross</li>
+          <li><b>Beyond the race</b>: participant parade, team presentation, exhibition performance, clinics, brand activation, and tenant bazaar</li>
+        </ul>
+      </div>
+      <div class="gallery"><img class="main" loading="lazy" decoding="async" src="img/811653af8569.webp" alt="Rockets Rollers Competition Series"><div class="thumbs" style="--n:4"><img loading="lazy" decoding="async" src="img/5ebdda19e63c.webp" alt="Rockets Rollers Competition Series"><img loading="lazy" decoding="async" src="img/d04f870ddc8c.webp" alt="Rockets Rollers Competition Series"><img loading="lazy" decoding="async" src="img/bc2cf17c01ed.webp" alt="Rockets Rollers Competition Series"><img loading="lazy" decoding="async" src="img/1d220dec2c85.webp" alt="Rockets Rollers Competition Series"></div></div>
+    </article>
+    <article class="ip-card glass">
+      <div>
+        <h3 class="ip-wordmark">Aquabike Indonesian Championship</h3>
+        <span class="ip-tag">Kejurnas Aquabike · IMI-sanctioned national series</span>
+        <p>Indonesia&rsquo;s national jet ski championship, developed after the Aquabike World Championship at Lake Toba in 2023 to give Indonesian riders a path to world-level competition while promoting priority tourism destinations. Co-promoted with Ocean Drive Sports.</p>
+        <ul>
+          <li><b>2024 series</b>: Toba (24&ndash;25 Feb), Samosir (27&ndash;28 Jul), North Sulawesi (31 Aug &ndash; 1 Sep), South Sulawesi (21&ndash;22 Sep)</li>
+          <li><b>2025 Round 1</b>, Bandengan Beach, Jepara, 11&ndash;13 July 2025, Piala Menpora</li>
+          <li>Around 30 riders per series, racing Endurance and Parallel Slalom</li>
+          <li>Opening ceremony, flag parade, flyboard show, gala dinner, and press conference, covered by Kemenpora, Metro TV, detikJateng, and Tribun</li>
+        </ul>
+      </div>
+      <div class="gallery"><img class="main" loading="lazy" decoding="async" src="img/ec811bbd5db0.webp" alt="Aquabike Indonesian Championship"><div class="thumbs" style="--n:4"><img loading="lazy" decoding="async" src="img/2e4a0ad54739.webp" alt="Aquabike Indonesian Championship"><img loading="lazy" decoding="async" src="img/3d5d247a36ed.webp" alt="Aquabike Indonesian Championship"><img loading="lazy" decoding="async" src="img/468777ae03e0.webp" alt="Aquabike Indonesian Championship"><img loading="lazy" decoding="async" src="img/afdfe476576c.webp" alt="Aquabike Indonesian Championship"></div></div>
+    </article>
+  </div>
+</section>
+<section class="portfolio dark" id="cases" style="padding-top:40px">
+  <div class="wrap">
+    <span class="section-label">Brand &amp; digital case studies</span>
+    <h2 class="tt h-xl"><em>Results</em> we can measure.</h2>
+    <p class="lede" style="margin-top:18px;color:var(--text-dim)">Selected brand strategy, content, and digital campaigns, with the numbers behind them.</p>
+    <div class="sub-head" style="margin-top:60px"><h3>Campaigns, content &amp; digital</h3><p>Strategy, creative production, and amplification with measurable results.</p></div>
+    <div class="cases">
+      <article class="case glass"><img class="case-img" loading="lazy" decoding="async" src="img/eda96dc6af38.webp" alt=""><div class="brand">Teh Pucuk Harum</div><h4>#KesegaranUntukSemua</h4><div class="num">200M+</div><div class="lbl">Facebook &amp; Instagram impressions, plus 120M+ TikTok hashtag views</div><div class="num">+14%</div><div class="lbl">market share, +13% market value</div><p class="how">Creative production, social media ads, 100+ KOL posts, Spotify audio ads.</p></article>
+      <article class="case glass"><img class="case-img" loading="lazy" decoding="async" src="img/58d54cc70769.webp" alt=""><div class="brand">Larutan Penyegar Cap Badak</div><h4>For Legacy Makers</h4><div class="num">38M+</div><div class="lbl">digital reach</div><div class="num">17M+</div><div class="lbl">YouTube views, 150+ hours of total live watch time</div><p class="how">Figure profile videos, limited-edition packaging, awarding night, and a prime-time program on Kompas TV.</p></article>
+      <article class="case glass"><img class="case-img" loading="lazy" decoding="async" src="img/6dc17f2e1e8e.webp" alt=""><div class="brand">Teh Pucuk Harum × Puyo</div><h4>Local brand collaboration</h4><div class="num">121K</div><div class="lbl">products sold</div><div class="num">131%</div><div class="lbl">achievement rate for Silky Pucuk sales</div><p class="how">Two collab menus, GoFood launch, POSM, and KOL collabs.</p></article>
+      <article class="case glass"><img class="case-img" loading="lazy" decoding="async" src="img/c7486ed40dff.webp" alt=""><div class="brand">Kimbo</div><h4>Social media management</h4><div class="num">78M</div><div class="lbl">total impressions, 1M+ engagements</div><div class="num">433K</div><div class="lbl">e-commerce traffic (0.78% CTR)</div><p class="how">Playbook, end-to-end content production, ads, and community management.</p></article>
+      <article class="case glass"><img class="case-img" loading="lazy" decoding="async" src="img/545d5c63b9e0.webp" alt=""><div class="brand">Daikin Inverteria</div><h4>National promo digital placement</h4><div class="num">11M+</div><div class="lbl">impressions in 2 weeks</div><div class="num">700%+</div><div class="lbl">achievement on impression KPI</div><p class="how">Social media ads, buzzer management, and reporting.</p></article>
+      <article class="case glass"><img class="case-img" loading="lazy" decoding="async" src="img/4124207a6be5.webp" alt=""><div class="brand">Kementerian Kominfo</div><h4>Video &amp; audio placement</h4><div class="num">92%</div><div class="lbl">completion rate on Vidio</div><div class="num">0.35%</div><div class="lbl">highest CTR on Spotify Indonesia, 1.18% CTR on WeTV</div><p class="how">Digital media planning and placement across streaming platforms.</p></article>
+    <article class="case glass wide"><div class="wide-in"><img class="case-img" loading="lazy" decoding="async" src="img/05efab03a344.webp" alt="Rockin Surabaya Showcase 2026"><div><div class="brand">Rockinverse.id</div><h4>Rockin Surabaya Showcase 2026</h4><div class="num">2.8M+</div><div class="lbl">views on Instagram &amp; Facebook, April to August 2026</div><div class="num">412K</div><div class="lbl">accounts reached in August, up 152.6% month over month</div><div class="num">87K+</div><div class="lbl">content interactions across the same period</div><p class="how">Content strategy and production, band showcase publications across four cities, interviews and aftermovies, and paid amplification.</p></div></div></article>
+      </div>
+    <div class="also">
+      <ul>
+        <li><b>Pucuk Cool Jam</b>, brand platform and the PCJ Creative Class series with Hindia, Diskoria, Teza Sumendra</li>
+        <li><b>DJPU 151</b>, video mini-series for Ditjen Perhubungan Udara</li>
+        <li><b>Menghubungkan Indonesia</b>, brand playbook, message framework, and logo for Kemenhub</li>
+      </ul>
+      <ul>
+        <li><b>Pospay</b>, rebranding research: 300 quantitative and 48 qualitative respondents, 5 cities</li>
+        <li><b>Social media management</b> for Teh Pucuk Harum, LA Streetball, Usagi, EJ Sport, Vitacimin</li>
+        <li><b>The Grand Outlet</b>, KOL management from pre-opening to grand opening</li>
+      </ul>
+      <ul>
+        <li><b>Jumbo × MotoGP</b>, ATL placement: 63 TVC &amp; superimpose spots across 21 races</li>
+        <li><b>PNM website</b>, corporate information, community forum, publications</li>
+        <li><b>MUAQ &amp; GEN</b>, beauty shoots, brand collaborations, and motion content</li>
+      </ul>
+    </div>
+
+      </div>
+</section>
+
+</main>
+<footer class="contact" id="kontak">
+  <div class="wrap">
+    <div class="cta-card">
+      <img class="cta-spark" src="img/6d9d1a60e53a.png" alt="" aria-hidden="true">
+      <h2 class="cta-title">Let&rsquo;s Bring Ideas to Life</h2>
+      <ul class="cta-pill">
+        <li><a href="https://www.juaraevent.id" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.8 2.8 4 6 4 9.5s-1.2 6.7-4 9.5c-2.8-2.8-4-6-4-9.5s1.2-6.7 4-9.5z"/></svg>www.juaraevent.id</a></li>
+        <li><a href="mailto:contact@juaraevent.id"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="1.5"/><path d="M3 6l9 7 9-7"/></svg>contact@juaraevent.id</a></li>
+        <li><a href="https://www.instagram.com/juaraeventid" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" class="dot"/></svg>juaraeventid</a></li>
+      </ul>
+      <div class="cta-info">
+        <div class="cta-row"><strong>Head Office</strong><p>Jl. Gudang Peluru Timur V Blok K<br>No. 257, Tebet, Jakarta Selatan</p></div>
+        <div class="cta-row"><strong>Contact Person</strong><p>Eka Marutha &nbsp;<a href="tel:+6281584360360">+62 815-8436-0360</a><br>Tri Wahyu &nbsp;<a href="tel:+6282143223372">+62 821-4322-3372</a></p></div>
+      </div>
+    </div>
+    <p class="cta-foot">&copy; 2026 PT Juara Berhasil Berkah Sejahtera</p>
+  </div>
+</footer>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="x" aria-label="Close">&times;</button><button class="pv" aria-label="Previous photo">&#8249;</button><img alt=""><button class="nx" aria-label="Next photo">&#8250;</button><div class="lb-cap"></div></div>
+<script>
+(function(){
+  var lb=document.getElementById('lb'),im=lb.querySelector('img'),cap=lb.querySelector('.lb-cap'),list=[],i=0,title='',last=null;
+  function show(){im.src=list[i];cap.textContent=title+'  '+(i+1)+' / '+list.length;}
+  function open(el){
+    var t=el.querySelector('template'),srcs=[el.querySelector('img.cover').src];
+    if(t){[].forEach.call(t.content.querySelectorAll('img'),function(x){srcs.push(x.getAttribute('src'));});}
+    list=srcs;i=0;title=(el.querySelector('h3')||{}).textContent||'';last=el;lb.classList.add('open');document.body.style.overflow='hidden';show();lb.querySelector('.x').focus();
+  }
+  function close(){lb.classList.remove('open');document.body.style.overflow='';if(last)last.focus();}
+  [].forEach.call(document.querySelectorAll('.feat,.pcard'),function(el){
+    el.addEventListener('click',function(){open(el);});
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(el);}});
+  });
+  lb.querySelector('.x').onclick=close;
+  lb.querySelector('.pv').onclick=function(){i=(i-1+list.length)%list.length;show();};
+  lb.querySelector('.nx').onclick=function(){i=(i+1)%list.length;show();};
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowRight')lb.querySelector('.nx').click();if(e.key==='ArrowLeft')lb.querySelector('.pv').click();});
+  var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){(dx<0?lb.querySelector('.nx'):lb.querySelector('.pv')).click();}sx=null;});
+})();
+</script>
+<style id="motion">
+.scroll-cue{position:absolute; left:50%; bottom:28px; transform:translateX(-50%); z-index:4; display:flex; flex-direction:column; align-items:center; gap:10px; font-family:var(--mono); font-size:12px; color:rgba(255,255,255,.7)}
+.scroll-cue i{display:block; width:1px; height:46px; background:linear-gradient(rgba(255,255,255,.7),transparent); transform-origin:top}
+.progress{position:fixed; left:0; top:0; height:2px; width:100%; transform-origin:0 50%; transform:scaleX(0); background:linear-gradient(90deg,var(--indigo),var(--lavender),var(--lime)); z-index:50; pointer-events:none}
+.tt .w{transition:opacity .25s linear}
+.tt em .w{background:linear-gradient(90deg,#3E52DA,#8C98F2); -webkit-background-clip:text; background-clip:text; color:transparent}
+.light .tt em .w{background:none; color:var(--light-accent)}
+.phases::after{content:""; position:absolute; top:6px; left:0; height:2px; width:100%; transform-origin:0 50%; transform:scaleX(var(--p,0)); background:#fff; box-shadow:0 0 12px rgba(146,150,242,.9)}
+.phases li{transition:opacity .4s ease}
+.phases li:not(.on){opacity:.4}
+@media (max-width:1000px){.phases::after{display:none}.phases li:not(.on){opacity:1}}
+@media (prefers-reduced-motion:no-preference){
+  .scroll-cue i{animation:cue 1.8s cubic-bezier(.6,0,.4,1) infinite}
+  @keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1); opacity:0}}
+  .js [data-rv]{opacity:0; transform:translateY(34px); transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1); transition-delay:var(--d,0s)}
+  .js [data-rv].in{opacity:1; transform:none}
+  .js .work[data-rv] img{transform:scale(1.12); transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+  .js .work[data-rv].in img{transform:scale(1)}
+}
+</style>
+<script>
+(function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
+  // scroll cue + progress bar
+  var hero=document.querySelector('.hero');
+  if(hero){var c=document.createElement('div');c.className='scroll-cue';c.setAttribute('aria-hidden','true');c.innerHTML='Scroll<i></i>';hero.appendChild(c);}
+  var bar=document.createElement('div');bar.className='progress';bar.setAttribute('aria-hidden','true');document.body.appendChild(bar);
+
+  // word-by-word headline fill, scrubbed by scroll
+  var heads=[].slice.call(document.querySelectorAll('.tt.h-xl'));
+  heads.forEach(function(h){
+    var walk=function(node){
+      [].slice.call(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){
+          var frag=document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(part){
+            if(!part) return;
+            if(/^\s+$/.test(part)){frag.appendChild(document.createTextNode(part));return;}
+            var s=document.createElement('span');s.className='w';s.textContent=part;frag.appendChild(s);
+          });
+          node.replaceChild(frag,n);
+        } else if(n.nodeType===1 && !n.classList.contains('tape')){ walk(n); }
+      });
+    };
+    walk(h);
+  });
+
+  // reveal on enter
+  var groups=['.pcard','.feat-cap','.ip-card','.exp','.steps-dark li','.feature-media','.feature li','.legend li','.svc','.work','.case','.act','.module','.steps li','.facts > div','.values-cols p','.why li','.also ul','.sub-head','.about-row > div','.contact-grid > *','.note','.wall'];
+  groups.forEach(function(sel){
+    var els=document.querySelectorAll(sel), parentIdx=new Map();
+    [].forEach.call(els,function(el){
+      var p=el.parentNode, i=parentIdx.get(p)||0; parentIdx.set(p,i+1);
+      el.setAttribute('data-rv',''); el.style.setProperty('--d',Math.min(i,5)*0.08+'s');
+    });
+  });
+
+  // number counters
+  function parseNum(t){
+    var m=t.match(/\d+(?:[.,]\d+)*/); if(!m) return null;
+    var raw=m[0], dec=0, val;
+    var thou=/^\d{1,3}(,\d{3})+$/.test(raw);
+    if(thou){ val=parseInt(raw.replace(/,/g,''),10); }
+    else { if(/\./.test(raw)) dec=raw.split('.')[1].length; val=parseFloat(raw); }
+    return {raw:raw,val:val,dec:dec,thou:thou};
+  }
+  function fmt(v,info){
+    var s=v.toFixed(info.dec);
+    if(info.thou){ s=Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g,','); }
+    return s;
+  }
+  var counters=[].slice.call(document.querySelectorAll('.case .num, .act strong, .facts strong')).map(function(el){
+    // operate on the first text node containing digits
+    var tn=null; (function f(n){ [].forEach.call(n.childNodes,function(c){ if(tn) return; if(c.nodeType===3 && /\d/.test(c.textContent)) tn=c; else if(c.nodeType===1) f(c); }); })(el);
+    if(!tn) return null; var info=parseNum(tn.textContent); if(!info) return null;
+    return {el:el,tn:tn,info:info,full:tn.textContent,done:false};
+  }).filter(Boolean);
+  function runCounter(c){
+    if(c.done) return; c.done=true; if(reduce) return;
+    var t0=null, dur=1400;
+    function step(ts){ if(!t0) t0=ts; var k=Math.min(1,(ts-t0)/dur), e=1-Math.pow(1-k,3);
+      c.tn.textContent=c.full.replace(c.info.raw,fmt(c.info.val*e,c.info)); if(k<1) requestAnimationFrame(step); else c.tn.textContent=c.full; }
+    c.tn.textContent=c.full.replace(c.info.raw,fmt(0,c.info)); requestAnimationFrame(step);
+  }
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{rootMargin:'0px 0px -10% 0px',threshold:.12});
+    [].forEach.call(document.querySelectorAll('[data-rv]'),function(el){io.observe(el);});
+    var co=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ var c=counters.find(function(x){return x.el===e.target;}); if(c) runCounter(c); co.unobserve(e.target);} }); },{threshold:.6});
+    counters.forEach(function(c){co.observe(c.el);});
+  } else { [].forEach.call(document.querySelectorAll('[data-rv]'),function(el){el.classList.add('in');}); }
+
+  // scroll-scrubbed: progress bar, headline fill, phases
+  var phases=document.querySelector('.phases'), phaseItems=phases?[].slice.call(phases.children):[];
+  var ticking=false;
+  function onScroll(){
+    ticking=false;
+    var vh=window.innerHeight, doc=document.documentElement;
+    var p=doc.scrollTop/Math.max(1,doc.scrollHeight-vh); bar.style.transform='scaleX('+p+')';
+    heads.forEach(function(h){
+      var r=h.getBoundingClientRect(), words=h.querySelectorAll('.w');
+      var prog=reduce?1:Math.min(1,Math.max(0,(vh*0.92-r.top)/(vh*0.55)));
+      var lit=Math.round(prog*words.length);
+      [].forEach.call(words,function(w,i){ w.style.opacity=i<lit?1:.18; });
+    });
+    if(phases){
+      var r=phases.getBoundingClientRect();
+      var pp=reduce?1:Math.min(1,Math.max(0,(vh*0.8-r.top)/(vh*0.5)));
+      phases.style.setProperty('--p',pp);
+      phaseItems.forEach(function(li,i){ li.classList.toggle('on', pp>=(i/phaseItems.length)); });
+    }
+  }
+  window.addEventListener('scroll',function(){ if(!ticking){ticking=true;requestAnimationFrame(onScroll);} },{passive:true});
+  window.addEventListener('resize',onScroll); onScroll();
+})();
+</script>
+
+</body>
+</html>
